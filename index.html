@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="style.css">
+	<title>Sign in | Sign up</title>
+</head>
+<body>
+<div class="container">
+	<div class="form-box">
+		<div class="button-box">
+			<div id="btn"></div>
+			<button type="button" class="toggle-btn" onclick="Login()">Log in</button>
+			<button type="button" class="toggle-btn" onclick="Register()">Register</button>
+		</div>
+		<div>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/your-profile">
+					<img src="./image/icons/facebook.png" alt="Facebook">
+				</a>
+				<a href="https://www.twitter.com/your-profile">
+					<img src="./image/icons/twitter.png" alt="Twitter">
+				</a>
+				<a href="https://www.linkedin.com/your-profile">
+					<img src="./image/icons/linkedin.png" alt="Linkedin">
+				</a>
+				<a href="https://www.gmail.com/your-profile">
+					<img src="./image/icons/gmail.png" alt="Gmail">
+				</a>
+					
+					<!-- Add more social media icons as needed -->
+			</div>
+
+		</div>
+		
+		<form id="login" class="input-group" action="">
+			<input type="text" class="input-field" placeholder="User Id" required >
+			<input type="password" class="input-field" placeholder="Enter Password" required minlength="6" maxlength="10">
+			<input type="checkbox" class="check-box" > <span>Remember Password </span>
+			<button type="submit" class="submit-btn">Log In</button>
+		</form>
+		<form id="register" class="input-group" action="">
+			<input type="text" class="input-field" placeholder="User Id" required>
+			<input type="email" class="input-field" placeholder="Enter your Email" required>
+			<input type="password" class="input-field" placeholder="Enter Password" required minlength="6" maxlength="10">
+			<input type="checkbox" class="check-box" required> <span>I Agree to the Terms & Conditions</span>
+			<button type="submit" class="submit-btn">Register</button>
+		</form>
+	</div>
+</div>
+
+
+
+<!-- Javascript link Section -->
+<script src="index.js"> </script>
+
+</body>
+</html>
