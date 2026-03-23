@@ -1,5 +1,14 @@
-FROM httpd:alpine
+# Use official nginx image
+FROM nginx:alpine
 
-COPY . /usr/local/apache2/htdocs/
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
 
+# Copy your website files into nginx directory
+COPY . /usr/share/nginx/html
+
+# Expose port 80
 EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
